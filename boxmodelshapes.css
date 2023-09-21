@@ -1,0 +1,46 @@
+#Square {
+    background-color: rebeccapurple;
+    padding: 100px;
+    height: 100px;
+    width: 100px;
+    border: solid 2px black; 
+}
+
+body {
+    padding: 50px
+}
+
+#Rectangle {
+    background-color: rebeccapurple;
+    padding: 100px;
+    height: 90px;
+    width: 300px;
+    border: solid 2px black; 
+}
+
+#Circle {
+    background-color: rebeccapurple;
+    padding: 100px;
+    height: 100px;
+    width: 100px;
+    border: solid 2px black;
+    border-radius: 50% 
+}
+
+#Oval {
+    background-color: rebeccapurple;
+    padding: 100px;
+    height: 30px;
+    width: 100px;
+    border: solid 2px black;
+    border-radius: 50% 
+}
+
+#Triangle {
+    width: 0;
+	height: 0;
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-bottom: 300px solid #df53b5;
+    border-color: 2px black;
+}
