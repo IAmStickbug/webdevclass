@@ -1,0 +1,30 @@
+h1 {
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    text-align: right;
+}
+
+h2 {
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+
+#toptext {
+    padding: 80px
+}
+
+#toptextmiddle {
+    margin: 10px
+}
+
+#tophead {
+    background-color: black;
+    height: 300px;
+    width: 2000px;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+}
