@@ -21,7 +21,7 @@ nav > div {
 }
 
 #two {
-    animation-name: accordion-1;
+    animation-name: accordion-2;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
@@ -47,13 +47,12 @@ footer {
     animation-duration: 20s;
     animation-iteration-count: 2;
 }
-}
 
 @keyframes color-swap {
     0% {background-color: purple;}
-    20% {background-color: orange;}
+    23% {background-color: orange;}
     50% {background-color: red;}
-    75% {background-color: brown;}
+    75% {background-color: skyblue;}
     100% {background-color: purple;}
 }
 
@@ -81,6 +80,29 @@ footer {
     100% {width: 80%;}
 }
 
+@media screen and (max-width: 600px) {
+    header {
+        height: 6vh;
+    }
+
+    nav > div {
+        height: 10px;
+        width: 50px;
+    }
+
+    #content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    aside {
+        width: 15vw;
+    }
+
+}
+
 @media screen and (min-width: 992px) {
     header {
         height: 15vh;
@@ -100,6 +122,98 @@ footer {
 
     aside {
         width: 25vw;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 6vh;
+    }
+
+    nav > div {
+        height: 10px;
+        width: 50px;
+    }
+
+    #content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    aside {
+        width: 15vw;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        height: 7vh;
+    }
+
+    nav > div {
+        height: 11px;
+        width: 55px;
+    }
+
+    #content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    aside {
+        width: 25vw;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        height: 10vh;
+    }
+
+    nav > div {
+        height: 15px;
+        width: 70px;
+    }
+
+    #content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    aside {
+        width: 20vw;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    header {
+        height: 19vh;
+    }
+
+    nav > div {
+        height: 31px;
+        width: 135px;
+    }
+
+    #content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    aside {
+        width: 45vw;
     }
 
 }
