@@ -1,40 +1,43 @@
-function tellFortune () {
-    e.preventDefault();
-    
+function tellFortune () { 
     numOfChildren = document.getElementById("children").value;
     partnerName = document.getElementById("name").value;
-    location = document.getElementById("location").value;
     jobTitle = document.getElementById("job").value;
 
-    document.getElementById("fortune").innerHTML = `You will be an ${jobTitle} in ${location}, married to ${partnerName} with 
+    document.getElementById("fortune").innerHTML = `You will be an ${jobTitle}, married to ${partnerName} with 
     ${numOfChildren} kids. What a loser, am I right?`;
 }
 
-function calculateDogAge (puppyAge) {
+function calculateDogAge () {
+    puppyAge = document.getElementById("dog-age").value;
     dogAge = puppyAge * 7;
-    console.log(`Your dog is ${dogAge} years old in dog years! I will need $20 now.`)
+    document.getElementById("age").innerHTML = `Your dog is ${dogAge} years old in dog years! I will need $20 now.`;
 }
 
-function calculateSupply (age, amountPerDay) {
+function calculateSupply () {
+   age = document.getElementById("current-age").value;
+   amountPerDay = document.getElementById("amount-per-day").value;
+   
     maxAge = 80;
     amountPerYear = amountPerDay * 365.25;
     amountNeeded = (maxAge - age) * amountPerYear;
-    console.log(`You will need ${amountNeeded} to last you until the ripe old age of ${maxAge}...should you live that long.`)
+    document.getElementById("supply").innerHTML = (`You will need ${amountNeeded} to last you until the ripe old age of ${maxAge}...should you live that long.`)
 }
 
-function calcCircumference (radius) {
-    circumference = 2 *Math.PI * radius;
-    console.log(`The circumference is ${circumference}. Neat.`)
+function calcCircumference () {
+    radius = document.getElementById("radius").value;
+    circumference = 2 * Math.PI * radius;
+    document.getElementById("circumference").innerHTML = `The circumference is ${circumference}`;
 }
 
-const calcArea = (radius) => console.log(`The area is ${Math.PI * radius * radius}. Breathtaking, I know.`)
+const calcArea = () => console.log(`The area is ${Math.PI * radius * radius}. Breathtaking, I know.`)
 
-function celsiusToFahrenheit (celsius) {
-    fahrenheit = celsius * 9 / 5 + 32;
-    console.log(`${celsius}C is ${fahrenheit}F. I have no words.`)
+function celsiusToFahrenheit () {
+    celsius = document.getElementById("celsius").value;
+    fahrenheit = (celsius * 9) / 5 + 32;
+    document.getElementById("fahrenheit").innerHTML = `${celsius}C is ${fahrenheit}F`;
 }
 
-function fahrenheitToCelsius (farenheit) {
+function fahrenheitToCelsius () {
     celsius = (fahrenheit - 32) * 5 / 9;
     console.log(`${fahrenheit}F is ${celsius}C. Are you proud of yourself for not knowing basic calculations?`)
 }
