@@ -31,3 +31,11 @@ body {
     padding: 5px;
     margin: 10px;
 }
+
+#copyrightinfo {
+    background-color:white;
+    font-size:small;
+    padding: 25px;
+    width:400px;
+    border-radius:10%
+}
