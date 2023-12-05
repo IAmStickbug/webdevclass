@@ -1,0 +1,134 @@
+#top {
+    padding: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: orangered;
+    border: 5px solid black;
+    margin-bottom: 20px;
+    animation-name: color-swap;
+    animation-duration: 20s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+#introduction {
+    padding: 30px;
+    border: 5px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: mediumspringgreen;
+    margin-bottom: 20px;
+}
+
+#childhood {
+    padding: 30px;
+    border: 5px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightpink;
+    margin-bottom: 20px;
+}
+
+#form {
+    padding: 30px;
+    border: 5px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: mediumspringgreen;
+    margin-bottom: 20px;
+}
+
+#location {
+    padding: 30px;
+    border: 5px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(250, 200, 0);
+    margin-bottom: 20px;
+}
+
+#footer {
+    padding: 30px;
+    padding-bottom: 100px;
+    border: 5px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: orange;
+    margin-bottom: 20px;
+}
+
+@keyframes color-swap {
+    0% {background-color: orangered;}
+    23% {background-color: red;}
+    50% {background-color: blueviolet;}
+    75% {background-color: skyblue;}
+    100% {background-color: orangered;}
+}
+
+@media screen and (max-width: 600px) {
+    #top {
+        padding: 1px;
+        margin-bottom: 3px;
+    }
+
+    #introduction {
+        padding: 1px;
+        margin-bottom: 3px;
+    }
+
+    #childhood {
+        padding: 1px;
+        margin-bottom: 3px;
+    }
+
+    #form {
+        padding: 1px;
+        margin-bottom: 3px;
+    }
+
+    #footer {
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        height: 15vh;
+    }
+
+    nav > div {
+        height: 25px;
+        width: 100px;
+    }
+
+    #content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    aside {
+        width: 25vw;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 6vh;
+    }
+
+    nav > div {
+        height: 10px;
+        width: 50px;
+    }
+
+    #content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    aside {
+        width: 15vw;
+    }
+
+}
