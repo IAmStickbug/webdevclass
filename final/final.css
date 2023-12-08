@@ -26,6 +26,22 @@
     margin-bottom: 20px;
 }
 
+#hobbies {
+    padding: 30px;
+    border: 5px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightblue;
+    margin-bottom: 20px;
+}
+
+#easter {
+    padding: 30px;
+    border: 5px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: plum;
+    margin-bottom: 20px;
+}
+
 #form {
     padding: 30px;
     border: 5px solid black;
@@ -80,6 +96,16 @@
         margin-bottom: 3px;
     }
 
+    #hobbies {
+        padding: 1px;
+        margin-bottom: 3px;
+    }
+
+    #easter {
+        padding: 1px;
+        margin-bottom: 3px;
+    }
+
     #footer {
         padding: 5px;
         margin-top: 10px;
@@ -87,48 +113,78 @@
 
 }
 
-@media screen and (min-width: 992px) {
-    header {
-        height: 15vh;
+@media screen and (max-width: 992px) {
+    #top {
+        padding: 3px;
+        margin-bottom: 7px;
     }
 
-    nav > div {
-        height: 25px;
-        width: 100px;
+    #introduction {
+        padding: 3px;
+        margin-bottom: 7px;
     }
 
-    #content {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+    #childhood {
+        padding: 3px;
+        margin-bottom: 7px;
     }
 
-    aside {
-        width: 25vw;
+    #form {
+        padding: 3px;
+        margin-bottom: 7px;
+    }
+
+    #hobbies {
+        padding: 3px;
+        margin-bottom: 7px;
+    }
+
+    #easter {
+        padding: 3px;
+        margin-bottom: 7px;
+    }
+
+    #footer {
+        padding: 10px;
+        margin-top: 14px;
     }
 
 }
 
-@media screen and (max-width: 600px) {
-    header {
-        height: 6vh;
+@media screen and (max-width: 1104px) {
+    #top {
+        padding: 4px;
+        margin-bottom: 9px;
     }
 
-    nav > div {
-        height: 10px;
-        width: 50px;
+    #introduction {
+        padding: 4px;
+        margin-bottom: 9px;
     }
 
-    #content {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+    #childhood {
+        padding: 4px;
+        margin-bottom: 9px;
     }
 
-    aside {
-        width: 15vw;
+    #form {
+        padding: 4px;
+        margin-bottom: 9px;
+    }
+
+    #hobbies {
+        padding: 4px;
+        margin-bottom: 9px;
+    }
+
+    #easter {
+        padding: 4px;
+        margin-bottom: 9px;
+    }
+
+    #footer {
+        padding: 15px;
+        margin-top: 23px;
     }
 
 }

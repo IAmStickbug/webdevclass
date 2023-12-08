@@ -9,3 +9,7 @@ document.getElementById("head").addEventListener("dblclick", function () {
 function submitForm () { 
     document.getElementById("submissionText").innerHTML = (`Thank you for submitting!`);
 }
+
+document.getElementById("egg").addEventListener("click", function () {
+    document.getElementById("egg").innerHTML = "00011110010110000111011101010110111";
+});
